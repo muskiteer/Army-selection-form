@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About - Army Entry Exam</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #2c3e50;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        main {
+            max-width: 800px;
+            margin: 30px auto;
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            text-align: center;
+            color: #2c3e50;
+        }
+
+        section {
+            margin-bottom: 20px;
+        }
+
+        section h2 {
+            font-size: 20px;
+            color: #34495e;
+            margin-bottom: 10px;
+        }
+
+        section p {
+            font-size: 16px;
+            color: #555;
+        }
+
+        ul {
+            padding-left: 20px;
+            color: #555;
+        }
+
+        ul li {
+            margin-bottom: 10px;
+        }
+        nav {
+            background: linear-gradient(90deg, #2c3e50, #34495e);
+            padding: 15px 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 18px;
+            font-weight: bold;
+            transition: color 0.3s, transform 0.3s;
+        }
+        nav a {
+                font-size: 16px;
+            }
+
+        nav a:hover {
+            color: #f39c12;
+            transform: scale(1.1);
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 20px;
+            color: #777;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h2 style ="cursor: pointer;" onclick="goToHomePage()" >Army Entry Exam</h2>
+        <p>Learn About the Perks and Exam Process</p>
+    </header>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="About.html">About</a>
+        <a href="FAQ.html">FAQ</a>
+        <a href="form.html">Apply Now</a>
+    </nav>
+    <main>
+        <h1>About the Army and the Exam</h1>
+
+        <section>
+            <h2>Perks of Being in the Army</h2>
+            <ul>
+                <li>Opportunity to serve and protect the nation.</li>
+                <li>Competitive salary and benefits, including healthcare and housing.</li>
+                <li>Professional development and leadership training.</li>
+                <li>Travel opportunities and exposure to diverse cultures.</li>
+                <li>Strong sense of camaraderie and teamwork.</li>
+                <li>Post-service career benefits and pension plans.</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>How the Exam Will Be Conducted</h2>
+            <p>The Army Entry Exam is designed to evaluate candidates' aptitude, physical fitness, and overall suitability for military service. The process includes the following stages:</p>
+            <ul>
+                <li><strong>Written Test:</strong> Covers general knowledge, aptitude, and basic mathematics. The test duration is 2 hours.</li>
+                <li><strong>Physical Fitness Test:</strong> Includes tasks such as running, push-ups, and other exercises to assess physical readiness.</li>
+                <li><strong>Medical Examination:</strong> Ensures candidates meet the required health standards.</li>
+                <li><strong>Personal Interview:</strong> Conducted to evaluate the candidate's motivation, communication skills, and suitability for the role.</li>
+            </ul>
+            <p>Detailed instructions and schedules will be provided after the application process is complete.</p>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Army Entry Exam. All Rights Reserved.</p>
+    </footer>
+
+    <script>
+        function goToHomePage(){
+            window.location.href="home.html"
+        }
+    </script>
+</body>
+</html>
