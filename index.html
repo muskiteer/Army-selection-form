@@ -170,7 +170,6 @@
     font-size: 24px;
 }
 
-/* Chat Window */
 #chat-window {
     position: fixed;
     bottom: 80px;
@@ -329,7 +328,7 @@
         <svg xmlns="http://www.w3.org/2000/svg" width="800px" height="800px" viewBox="0 0 16 16" fill="blue"><path fill-rule="evenodd" clip-rule="evenodd" d="M8.48 4h4l.5.5v2.03h.52l.5.5V8l-.5.5h-.52v3l-.5.5H9.36l-2.5 2.76L6 14.4V12H3.5l-.5-.64V8.5h-.5L2 8v-.97l.5-.5H3V4.36L3.53 4h4V2.86A1 1 0 0 1 7 2a1 1 0 0 1 2 0 1 1 0 0 1-.52.83V4zM12 8V5H4v5.86l2.5.14H7v2.19l1.8-2.04.35-.15H12V8zm-2.12.51a2.71 2.71 0 0 1-1.37.74v-.01a2.71 2.71 0 0 1-2.42-.74l-.7.71c.34.34.745.608 1.19.79.45.188.932.286 1.42.29a3.7 3.7 0 0 0 2.58-1.07l-.7-.71zM6.49 6.5h-1v1h1v-1zm3 0h1v1h-1v-1z"/></svg>
     </div>
 
-    <!-- Chat Window -->
+    
     <div id="chat-window">
         <div class="disc">
             <h3>ChatBot</h3>
@@ -352,7 +351,7 @@ const sendBtn = document.getElementById('send-btn');
 const chatInput = document.getElementById('chat-input');
 const messages = document.querySelector('.messages');
 
-// Open/Close Chat Window
+
 chatbotIcon.addEventListener('click', () => {
   chatWindow.style.display = 'flex';
 });
@@ -361,7 +360,6 @@ closeBtn.addEventListener('click', () => {
   chatWindow.style.display = 'none';
 });
 
-// Sending a Message
 sendBtn.addEventListener('click', sendMessage);
 document.addEventListener('keydown',(event)=>{
   if(event.key=="Enter")
@@ -371,12 +369,12 @@ function sendMessage() {
   const userMessage = chatInput.value.trim();
   if (userMessage=="Hello") {
     appendMessage('user', userMessage);
-    appendMessage('bot', "Hi! I'm here to help!"); // Placeholder bot response
+    appendMessage('bot', "Hi! I'm here to help!");
     chatInput.value = '';
   }
   if (userMessage=="Tell me about the application form") {
     appendMessage('user', userMessage);
-    appendMessage('bot', "This a a application form to get into army and get a chance to serve the ci"); // Placeholder bot response
+    appendMessage('bot', "This a a application form to get into army and get a chance to serve the ci");
     chatInput.value = '';
   }
 }
@@ -386,8 +384,7 @@ function appendMessage(sender, text) {
   message.classList.add(sender);
   message.textContent = text;
   messages.appendChild(message);
-  messages.scrollTop = messages.scrollHeight; // Scroll to the latest message
-}
+  messages.scrollTop = messages.scrollHeight;}
     </script>
 </body>
 </html>
