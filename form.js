@@ -7,7 +7,7 @@ button.onclick = function() {
         alert("Please enter a valid name");
         
     } 
-    else if (typeof phone.value !== 'number') { // This regex checks if the phone number contains only digits
+    else if (typeof phone.value !== 'number') { 
         alert("Please enter a valid phone number");
         
     } 
