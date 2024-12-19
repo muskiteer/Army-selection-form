@@ -12,7 +12,7 @@ button.onclick = function() {
         
     } 
     else {
-        // alert("Your application has been submitted");
+         alert("Your application has been submitted");
         
     }
     window.location.href="form.html" ;
